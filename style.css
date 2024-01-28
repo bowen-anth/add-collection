@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: aliceblue;
+}
+
+.card {
+  width: 96%;
+  max-width: 500px;
+  height: 90%;
+  background-color: white;
+  margin: 3em auto;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  border: 1px solid gray;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.item-container {
+  cursor: pointer;
+  display: flex;
+  margin: 2em 0;
+  align-items: center;
+  gap: 1em;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 3px black;
+  margin-left: auto;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.checkmark-span {
+  display: none;
+  cursor: pointer;
+}
+
+#item-one:checked + label .checkmark-span,
+#item-two:checked + label .checkmark-span,
+#item-three:checked + label .checkmark-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin-top: 1px;
+}
+
+.image-placeholder {
+  border-radius: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  color: blueviolet;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.footer span {
+  font-size: 1.25rem;
+  background-color: blueviolet;
+  color: white;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2px;
+  margin-right: 0.25em;
+}
+
+.save-button {
+  cursor: pointer;
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(blueviolet, pink);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* #item-one:checked ~ label .checkmark.one {
+  display: none;
+} */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Add Collection</title>
+  </head>
+  <body>
+    <div class="card">
+      <header class="header">
+        <p class="bold">Add to <br />collection</p>
+        <button class="close">X</button>
+      </header>
+      <form id="form">
+        <!-- item one start -->
+        <input type="checkbox" id="item-one" checked />
+        <label for="item-one">
+          <div class="item-container one">
+            <img
+              src="https://placehold.co/100x100"
+              alt="image placeholder"
+              height="100px"
+              width="100px"
+              class="placeholder-image"
+            />
+            <div class="info-container">
+              <p class="bold">Dashboards</p>
+              <div class="info-bottom-container">
+                <p>
+                  <span class="items">24 items</span> •
+                  <span class="updated">Updated yesterday</span>
+                </p>
+              </div>
+            </div>
+            <button
+              class="checkmark one"
+              type="button"
+              aria-hidden="true"
+              for="item-one"
+            >
+              <span class="checkmark-span">&#x2713;</span>
+            </button>
+          </div>
+        </label>
+        <!-- item one end -->
+        <!-- item two start -->
+        <input type="checkbox" id="item-two" />
+        <label for="item-two">
+          <div class="item-container two">
+            <img
+              src="https://placehold.co/100x100"
+              alt="image placeholder"
+              height="100px"
+              width="100px"
+              class="placeholder-image"
+            />
+            <div class="info-container">
+              <p class="bold">Dashboards</p>
+              <div class="info-bottom-container">
+                <p>
+                  <span class="items">7 items</span> •
+                  <span class="updated">Updated May 9, 2024</span>
+                </p>
+              </div>
+            </div>
+            <button
+              class="checkmark two"
+              type="button"
+              aria-hidden="true"
+              for="item-two"
+            >
+              <span class="checkmark-span two">&#x2713;</span>
+            </button>
+          </div>
+        </label>
+        <!-- item two end -->
+        <!-- item three start -->
+        <input type="checkbox" id="item-three" />
+        <label for="item-three">
+          <div class="item-container three">
+            <img
+              src="https://placehold.co/100x100"
+              alt="image placeholder"
+              height="100px"
+              width="100px"
+              class="placeholder-image"
+            />
+            <div class="info-container">
+              <p class="bold">Dashboards</p>
+              <div class="info-bottom-container">
+                <p>
+                  <span class="items">9 items</span> •
+                  <span class="updated">Updated May 3, 2024</span>
+                </p>
+              </div>
+            </div>
+            <button
+              class="checkmark three"
+              type="button"
+              aria-hidden="true"
+              for="item-three"
+            >
+              <span class="checkmark-span three">&#x2713;</span>
+            </button>
+          </div>
+        </label>
+        <!-- item three end -->
+      </form>
+      <footer class="footer">
+        <p><span>+</span> Create New</p>
+        <button class="save-button">Save</button>
+      </footer>
+    </div>
+  </body>
+</html>
